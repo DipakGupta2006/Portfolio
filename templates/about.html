@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    
+<!-- Mirrored from ex-coders.com/html/pubzi/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Nov 2025 13:48:13 GMT -->
+<head>
+       <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Pixel-plus">
+        <meta name="description" content="Pubzi - eSports and Gaming HTML Template">
+        <!-- ======== Page title ============ -->
+        <title>Dipak's Portfolio</title>
+        <!--<< Favcion >>-->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+        <!--<< All Min Css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css') }}">
+
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}">
+
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+                            
+    </head>
+    <body>
+
+      <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I   
+                    </span>
+                    <span data-text-preloader="p" class="letters-loading">
+                        p
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+                <p class="text-center">Loading...</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- GT Back To Top Start -->
+        <button id="gt-back-top" class="gt-back-to-top show">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+        
+       
+         <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="{{ url_for('home') }}">
+                                    <!-- <img src="assets/img/logo/black-logo.svg" alt="logo-img"> -->
+                                    <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text d-none d-xl-block">
+                        I am passionate about leveraging my technical skills to create innovative solutions and contribute to impactful projects. With a commitment to continuous learning and a drive for excellence, I am eager to apply my knowledge and skills in a dynamic work environment.
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="sideber-image">
+                        </div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mira Road, Thane</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:idipakgupta2006@gmail.com"><span class="mailto:idipakgupta2006@gmail.com">idipakgupta2006@gmail.com</span></a>
+                                    </div>
+                                </li>
+                                
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+918779264482">+91 87792 64482</a>
+                                    </div>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-2 header-3">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="logo">
+                            <a href="{{ url_for('home') }}" class="header-logo">
+                                <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                            </a>
+                        </div>
+                         <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-dropdown active menu-thumb">
+                                                <a href="{{ url_for('home') }}">
+                                                    Home 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url_for('about') }}">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url_for('projects') }}">
+                                                    Projects
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url_for('contact') }}">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        <div class="header-right d-flex justify-content-end align-items-center mt-0">
+                            <div class="header-right-icon">
+                                 <div class="header-button">
+                                    <a href="{{ url_for('contact') }}" class="theme-btn">
+                                        get in touch
+                                    </a>
+                              </div>
+                                
+                            <div class="header__hamburger d-xl-block my-auto">
+                                <div class="sidebar__toggle">
+                                    <!-- <img src="assets/img/logo/ber-2.svg" alt=""> -->
+                                     <i class="fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- GT Search Start -->
+         <!-- ye kis liye hai=  -->
+        <!-- <div class="search-popup">
+            <div class="search-popup__overlay search-toggler"></div>
+            <div class="search-popup__content">
+                <form role="search" method="get" class="search-popup__form" action="#">
+                    <input type="text" id="search" name="search" placeholder="Search Here...">
+                    <button type="submit" aria-label="search submit" class="search-btn">
+                        <span><i class="fa-regular fa-magnifying-glass"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div> -->
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                 <!-- GT Breadcrunb Section Start -->
+        <div class="gt-breadcrumb-wrapper bg-cover">
+            <div class="gt-blur-shape">
+                <img src="{{ url_for('static', filename='images/home-1/gaming-logo/gradient-shape.png') }}" alt="img">
+            </div>
+            <div class="container">
+                <div class="gt-page-heading">
+                    <div class="gt-breadcrumb-sub-title">
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">about</h1>
+                    </div>
+                    <ul class="gt-breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('home') }}">
+                                home :
+                            </a>
+                        </li>
+                        <li class="color">
+                           about me
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+                 <!-- About Section Start -->
+        <section class="about-section-2 section-padding fix">
+            <div class="about-shape-1">
+                <!-- <img src="{{ url_for('static', filename='images/home-2/about/about-shape-1.png') }}" alt="img"> -->
+            </div>
+            <div class="container">
+                <div class="about-wrapper-2">
+                    <div class="container">
+                <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-iamge wow fadeInUp" data-wow-delay=".3s">
+                                <img src="{{ url_for('static', filename='images/home-2/about/aout-01.jpg') }}" alt="img">
+                                <div class="line-shape">
+                                    <img src="{{ url_for('static', filename='images/home-2/about/line-shape.png') }}" alt="img">
+                                </div>
+                                <div class="text-shape float-bob-y">
+                                     <h2>Dipak</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="section-title mb-0">
+                                    <h6 class="wow fadeInUp">about my coding journey</h6>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        My Coding Journey: From Passion to Profession   
+                                    </h2>
+                                </div>
+                                <p class="about-text wow fadeInUp" data-wow-delay=".5s">
+                                    I'm a passionate web developer with expertise in HTML, CSS, JavaScript, and various frameworks. I create responsive and user-friendly websites that deliver exceptional user experiences. With a keen eye for design and a commitment to clean code, I strive to bring innovative solutions to life. Let's collaborate and turn your ideas into reality!
+                                    
+                                </p>
+                                <div class="counter-wrap-2">
+                                    <div class="counter-item-2 wow fadeInUp" data-wow-delay=".6s">
+                                        <h2>
+                                            <span class="gt-count">40</span> +
+                                        </h2>
+                                        <p>Certificates</p>
+                                    </div>
+                                    <div class="counter-item-2 wow fadeInUp" data-wow-delay=".4s">
+                                        <h2>
+                                            <span class="gt-count">15</span> +
+                                        </h2>
+                                        <p>Projects</p>
+                                    </div>
+                                    <div class="counter-item-2 wow fadeInUp" data-wow-delay=".2s">
+                                        <h2>
+                                            <span class="gt-count">400</span> +
+                                        </h2>
+                                        <p>Problems Solved</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+
+        <!-- GT Top Feature Section Start -->
+       
+
+        <!-- GT Video Section Start -->
+       
+
+       <!-- GT Testimonial Section Start -->
+        
+         <!-- Instagram Section Start -->
+          
+        <div class="section-title mb-0">
+            <h6 class="wow fadeInUp">My Latest Certificates</h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                My Certificates collection's
+                                          
+            </h2>
+        </div>
+        <div class="instagram-section-3 fix section-padding pt-0">
+            <div class="swiper instagram-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/cppinfosys.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                C++ Certificate By Infosys SpringBoard 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/javau.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                 Java Certificate By Udemy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/pythons.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                 Python Certificate By Spoken Tutorial
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/sqlh.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                SQL Certificate By Udemy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/matplotlibi.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                 Matplotlib Certificate By Infosys SpringBoard
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/numpyu.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                 NumPy Certificate by Udemy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-image">
+                            <img src="{{ url_for('static', filename='images/home-5/instagram/cs.jpeg') }}" alt="img">
+                            <a href="#" class="icon">
+                                 C Certificate By SimpliLearn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+
+          <!-- GT Brand Section Start -->
+          
+        <!-- Cta Section Start -->
+        <section class="cta-contact-section section-padding pb-0">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="content wow fadeInUp" data-wow-delay=".3s">
+                        <p>
+                            Ready to turn your ideas into reality? <br>
+                            Contact me today and let's discuss how I can help you achieve your goals.
+                        </p>
+                        <h3>
+                            Let's Connect and Create Something Amazing Together!
+                            <br>
+                                Whether you have a project in mind or just want to say hello,<br> I'm here to listen and collaborate.
+                        </h3>
+                    </div>
+                    
+                    <div class="contact-right wow fadeInUp" data-wow-delay=".7s">
+                        <div class="contact-info">
+                            <h3>call us</h3>
+                            <p><a href="tel:+918779264482">+91 87792 64482</a></p>
+                        </div>
+                        <a href="{{ url_for('contact') }}" class="theme-btn">
+                          get started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer Section Start -->
+       
+            <div class="swiper line-slider mt-0">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+            
+             <footer class="footer-section fix bg-cover" style="background-image: url('{{ url_for('static', filename='images/home-1/footer-image.jpg') }}');">
+            <div class="container">
+                <div class="footer-top-wrapper">
+                    <a href="{{ url_for('home') }}" class="footer-logo">
+                        <!-- <img src="assets/img/logo/white-logo-3.svg" alt="logo-img"> -->
+                        <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                    </a>
+                    <div class="location-info">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p>
+                            Mira Road, Thane
+                        </p>
+                    </div>
+                </div>
+            </div>            
+           
+             
+            <p class="footer-bottom-text">© 2026 <b>DIPAK GUPTA</b>. All Rights Reserved.</p>
+        
+        </footer>
+            </div>
+        </div>
+
+       
+
+       
+      
+        
+<!--<< All JS Plugins >>-->
+<script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+
+<!--<< Viewport Js >>-->
+<script src="{{ url_for('static', filename='js/viewport.jquery.js') }}"></script>
+
+<!--<< Bootstrap Js >>-->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+<!--<< nice-select Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+
+<!--<< Waypoints Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.waypoints.js') }}"></script>
+
+<!--<< Counterup Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+
+<!--<< Parallaxie Min Js >>-->
+<script src="{{ url_for('static', filename='js/parallaxie.js') }}"></script>
+
+<!--<< Swiper Slider Js >>-->
+<script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+
+<!--<< MeanMenu Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.meanmenu.min.js') }}"></script>
+
+<!--<< Magnific Popup Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+
+<!--<< Gsap Min Js >>-->
+<script src="{{ url_for('static', filename='js/gsap.min.js') }}"></script>
+
+<!--<< Gsap Scroll To Plugin Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-to-plugin.js') }}"></script>
+
+<!--<< Gsap Scroll Smoother Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-smoother.js') }}"></script>
+
+<!--<< Gsap Scroll Trigger Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-trigger.js') }}"></script>
+
+<!--<< SplitText Min Js >>-->
+<script src="{{ url_for('static', filename='js/SplitText.min.js') }}"></script>
+
+<!--<< Wow Animation Js >>-->
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+
+<!--<< splitType Js >>-->
+<script src="{{ url_for('static', filename='js/splitType.js') }}"></script>
+
+<!--<< script-gsap Js >>-->
+<script src="{{ url_for('static', filename='js/script-gsap.js') }}"></script>
+
+<!--<< Main.js >>-->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+
+<!-- Mirrored from ex-coders.com/html/pubzi/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Nov 2025 13:48:21 GMT -->
+</html>

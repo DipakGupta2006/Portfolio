@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!-- loo man liya hamne -->
+<html lang="en"> 
+    <!--<< Header Area >>-->
+    
+<!-- Mirrored from ex-coders.com/html/pubzi/match.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Nov 2025 13:48:41 GMT -->
+<head>
+       <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Pixel-plus">
+        <meta name="description" content="Pubzi - eSports and Gaming HTML Template">
+        <!-- ======== Page title ============ -->
+        <title>Dipak's Portfolio</title>
+        <!--<< Favcion >>-->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+        <!--<< All Min Css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css') }}">
+
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}">
+
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+                            
+    </head>
+    <body>
+
+      <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P   
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+                <p class="text-center">Loading...</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- GT Back To Top Start -->
+        <button id="gt-back-top" class="gt-back-to-top show">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+
+        <!-- GT MouseCursor Start -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner"></div>
+
+         <!-- Offcanvas Area Start -->
+         <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="{{ url_for('home') }}">
+                                    <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>                                     
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <p class="text d-none d-xl-block">
+                            I'm a passionate web developer with expertise in HTML, CSS, JavaScript, and various frameworks. I create responsive and user-friendly websites that deliver exceptional user experiences. With a keen eye for design and a commitment to clean code, I strive to bring innovative solutions to life. Let's collaborate and turn your ideas into reality!
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mira Road, Thane</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:idipakgupta2006@gmail.com"><span class="mailto:idipakgupta2006@gmail.com">idipakgupta2006@gmail.com</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+918779264482">+91 87792 64482</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- linkssss -->
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-2 header-3">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="logo">
+                            <a href="{{ url_for('home') }}" class="header-logo">
+                                <!-- <img src="assets/img/logo/white-logo.svg" alt="logo-img"> -->
+                                <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                            </a>
+                        </div>
+                         <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-dropdown active menu-thumb">
+                                                <a href="{{ url_for('home') }}">
+                                                    Home 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url_for('about') }}">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url_for('projects') }}">
+                                                    Projects
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ url_for('contact') }}">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        <div class="header-right d-flex justify-content-end align-items-center mt-0">
+                            <div class="header-right-icon">
+                                 <div class="header-button">
+                                    <a href="{{ url_for('contact') }}" class="theme-btn">
+                                        get in touch
+                                    </a>
+                              </div>
+                                
+                            <div class="header__hamburger d-xl-block my-auto">
+                                <div class="sidebar__toggle">
+                                    <!-- <img src="assets/img/logo/ber-2.svg" alt=""> -->
+                                     <i class="fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- GT Search Start -->
+        <!-- <div class="search-popup">
+            <div class="search-popup__overlay search-toggler"></div>
+            <div class="search-popup__content">
+                <form role="search" method="get" class="search-popup__form" action="#">
+                    <input type="text" id="search" name="search" placeholder="Search Here...">
+                    <button type="submit" aria-label="search submit" class="search-btn">
+                        <span><i class="fa-regular fa-magnifying-glass"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div> -->
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- GT Breadcrunb Section Start -->
+        <div class="gt-breadcrumb-wrapper bg-cover">
+            <div class="gt-blur-shape">
+                <img src="{{ url_for('static', filename='images/home-1/gaming-logo/gradient-shape.png') }}" alt="img">
+            </div>
+            <div class="container">
+                <div class="gt-page-heading">
+                    <div class="gt-breadcrumb-sub-title">
+                        <h1 class="wow fadeInUp" data-wow-delay=".3s">Porject's</h1>
+                    </div>
+                    <ul class="gt-breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('home') }}">
+                                home :
+                            </a>
+                        </li>
+                        <li class="color">
+                            my project's
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+         <!-- Trending Match Section Start -->
+        <section class="trending-match-section fix section-padding">
+            <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-shape float-bob-y1">
+                <img src="{{ url_for('static', filename='images/home-2/match/left-shape.png') }}" alt="img">
+            </div>
+            <div class="right-shape">
+                <img src="{{ url_for('static', filename='images/home-2/match/right-shape.png') }}" alt="img">
+            </div>
+            <div class="container">
+                <div class="trending-match-wrapper mt-0">
+                    
+                    <div class="vec-arrow">
+                        <!-- <img src="assets/img/home-2/match/vec-arrow.png" alt="img"> -->
+                    </div>
+                    <div class="linear-shape">
+                        <img src="{{ url_for('static', filename='images/home-2/match/linear-bg-1.png') }}" alt="img">
+                    </div>
+                    <div class="linear-shape-2">
+                        <img src="{{ url_for('static', filename='images/home-2/match/linear-bg-2.png') }}" alt="img">
+                    </div>
+                    
+                    <div class="trending-match-items wow fadeInUp" data-wow-delay=".3s">
+                        <div class="trending-match-left">
+                            <div class="gt-watch-now-items">
+                                <span>Password Manager Web Application⁠ <i class="fa-solid fa-lock"></i></span>
+                                <p>
+                                    This project is a Password Manager Web Application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to securely store and manage their passwords in one place through a simple and user-friendly  interface.  
+                                </p>
+                                <ul class="gt-watch-now-list">
+                                    <li>
+                                        <a href="https://github.com/DipakGupta2006/Password-Manager-Web-Application" target="_blank">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trending-match-content">
+                                <p>                                                     
+                                    <ul class="gt-watch-now-list" style="margin-top: 20px; padding-left: 30px; list-style-type: disc;">
+                                        Features:
+                                        <li>User Registration & Login System</li>
+                                        <li>Secure Password Storage using MySQL Database</li>
+                                        <li>Add New Passwords</li>
+                                        <li>View Saved Passwords (Expandable Details)</li>
+                                        <li>Delete Passwords</li>
+                                        <li>Password Generator (Custom length & options)</li>
+                                        <li>Copy to Clipboard functionality</li>
+                                        <li>Dashboard showing total saved passwords</li>
+                                    </ul>
+                                </p>
+                        </div>
+                    </div>
+
+
+                    <div class="trending-match-items wow fadeInUp" data-wow-delay=".5s">
+                        <div class="trending-match-content">
+                                <p>                            
+                                    <ul class="gt-watch-now-list" style="margin-top: 20px; padding-left: 30px; list-style-type: disc;">
+                                        Features:
+                                        <li>Voice Recognition – Listens and understands your voice commands.</li>
+                                        <li>Text-to-Speech (TTS) – Responds to you with a natural-sounding voice.</li>
+                                        <li>Internet Search – Opens websites and fetches information from the web.</li>
+                                        <li>Custom Commands – Add your own commands and extend functionality easily.</li>
+                                        <li>Music playback & Spotify integration</li>
+                                    </ul>
+                                </p>
+                        </div>
+                        <div class="trending-match-left">
+                            <div class="gt-watch-now-items">
+                                <span>AI-Powered Personal Voice Assistant  <i class="fa-solid fa-robot"></i></span>
+                                <p>
+                                    This project is an AI-Powered Personal Voice Assistant built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to interact with a voice-controlled interface to perform various tasks and manage their digital life more efficiently.
+                                </p>
+                                <ul class="gt-watch-now-list">
+                                    <li>
+                                        <a href="https://github.com/DipakGupta2006/AI-Powered-Personal-Voice-Assistant-in-Python" target="_blank">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending-match-items wow fadeInUp" data-wow-delay=".3s">
+                        <div class="trending-match-left">
+                            <div class="gt-watch-now-items">
+                                <span>CleanDataX-Automated-Data-Cleaning-Web-App <i class="fa-solid fa-broom"></i></span>
+                                <p>
+                                    In real-world projects, raw data often contains duplicates, missing values, inconsistent formatting, and unwanted spaces. To solve this, I built a web app that allows users to upload datasets and instantly get cleaned, structured, and ready-to-use data.
+                                </p>
+                                <ul class="gt-watch-now-list">
+                                    <li>
+                                        <a href="https://github.com/DipakGupta2006/CleanDataX-Automated-Data-Cleaning-Web-App" target="_blank">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="trending-match-content">
+                                <p>             
+                                    <ul class="gt-watch-now-list" style="margin-top: 20px; padding-left: 30px; list-style-type: disc;">
+                                        Features:
+                                        <li>Upload CSV / Excel files</li>
+                                        <li>Remove duplicate records</li>
+                                        <li>Drop rows with missing values</li>
+                                        <li>Trim extra spaces from text data</li>
+                                        <li>Format column names (Title Case)</li>
+                                        <li>Download cleaned dataset instantly</li>
+                                        <li>Clean & responsive UI</li>
+                                    </ul>
+                                </p>
+                        </div>
+                    </div>
+
+
+                    <div class="trending-match-items wow fadeInUp" data-wow-delay=".5s">
+                        <div class="trending-match-content">
+                                <p>                            
+                                    <ul class="gt-watch-now-list" style="margin-top: 20px; padding-left: 30px; list-style-type: disc;">
+                                        Features:
+                                        <li>User Authentication (Login System)</li>
+                                        <li>Add & Manage Employees</li>
+                                        <li>View Employee List</li>
+                                        <li>Salary Calculation System</li>
+                                        <li>Bonus Calculator</li>
+                                        <li>Generate Payslips</li>
+                                        <li>Reports Dashboard</li>
+                                        <li>Responsive UI (HTML, CSS, JavaScript)</li>
+
+                                    </ul>
+                                </p>
+                        </div>
+                        <div class="trending-match-left">
+                            <div class="gt-watch-now-items">
+                                <span>Employee Payroll Management System & Bonus Calculator <i class="fa-solid fa-address-card"></i></span>
+                                <p>
+                                    A full-stack web application built using Flask and MySQL to manage employee records, calculate salaries, and generate payslips efficiently.
+                                </p>
+                                <ul class="gt-watch-now-list">
+                                    <li>
+                                        <a href="https://github.com/DipakGupta2006/Employee-Payroll-Management-System-Bonus-Calculator" target="_blank">
+                                            <i class="fa-brands fa-github"></i> GitHub
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+         <!-- Team Section Start -->
+        
+
+          <!-- Video Section Start -->
+        
+         <!-- Marque Section Start -->
+        
+        <!-- Cta Section Start -->
+        
+
+
+        <!-- Footer Section Start -->
+          <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Brand Section Start -->
+
+        <!-- Cta Section Start -->
+        <section class="cta-contact-section section-padding pb-0">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="content wow fadeInUp" data-wow-delay=".3s">
+                        <p>
+                            Ready to turn your ideas into reality? <br>
+                            Contact me today and let's discuss how I can help you achieve your goals.
+                        </p>
+                        <h3>
+                            Let's Connect and Create Something Amazing Together!
+                            <br>
+                                Whether you have a project in mind or just want to say hello,<br> I'm here to listen and collaborate.
+                        </h3>
+                    </div>
+                    
+                    <div class="contact-right wow fadeInUp" data-wow-delay=".7s">
+                        <div class="contact-info">
+                            <h3>call us</h3>
+                            <p><a href="tel:+918779264482">+91 87792 64482</a></p>
+                        </div>
+                        <a href="{{ url_for('contact') }}" class="theme-btn">
+                          get started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section fix bg-cover" style="background-image: url('{{ url_for('static', filename='images/home-2/footer/footer-bg.jpg') }}');">
+            <div class="container">
+                <div class="footer-top-wrapper">
+                    <a href="{{ url_for('home') }}" class="footer-logo">
+                        <!-- <img src="assets/img/logo/white-logo-3.svg" alt="logo-img"> -->
+                        <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                    </a>
+                    <div class="location-info">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p>
+                            Mira Road, Thane
+                        </p>
+                    </div>
+                </div>
+            </div>            
+           
+             
+            <p class="footer-bottom-text">© 2026 <b>DIPAK GUPTA</b>. All Rights Reserved.</p>
+        </footer>
+            </div>
+        </div>
+  
+
+        
+        
+<!--<< All JS Plugins >>-->
+<script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+
+<!--<< Viewport Js >>-->
+<script src="{{ url_for('static', filename='js/viewport.jquery.js') }}"></script>
+
+<!--<< Bootstrap Js >>-->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+<!--<< nice-select Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+
+<!--<< Waypoints Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.waypoints.js') }}"></script>
+
+<!--<< Counterup Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+
+<!--<< Parallaxie Min Js >>-->
+<script src="{{ url_for('static', filename='js/parallaxie.js') }}"></script>
+
+<!--<< Swiper Slider Js >>-->
+<script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+
+<!--<< MeanMenu Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.meanmenu.min.js') }}"></script>
+
+<!--<< Magnific Popup Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+
+<!--<< Gsap Min Js >>-->
+<script src="{{ url_for('static', filename='js/gsap.min.js') }}"></script>
+
+<!--<< Gsap Scroll To Plugin Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-to-plugin.js') }}"></script>
+
+<!--<< Gsap Scroll Smoother Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-smoother.js') }}"></script>
+
+<!--<< Gsap Scroll Trigger Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-trigger.js') }}"></script>
+
+<!--<< SplitText Min Js >>-->
+<script src="{{ url_for('static', filename='js/SplitText.min.js') }}"></script>
+
+<!--<< Wow Animation Js >>-->
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+
+<!--<< splitType Js >>-->
+<script src="{{ url_for('static', filename='js/splitType.js') }}"></script>
+
+<!--<< script-gsap Js >>-->
+<script src="{{ url_for('static', filename='js/script-gsap.js') }}"></script>
+
+<!--<< Main.js >>-->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+
+<!-- Mirrored from ex-coders.com/html/pubzi/match.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Nov 2025 13:48:42 GMT -->
+</html>

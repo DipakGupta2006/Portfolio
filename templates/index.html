@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    
+<!-- Mirrored from ex-coders.com/html/pubzi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Nov 2025 13:31:34 GMT -->
+<head>
+       <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Pixel-plus">
+        <meta name="description" content="Pubzi - eSports and Gaming HTML Template">
+        <!-- ======== Page title ============ -->
+        <title>Dipak Gupta's Portfolio</title>
+            <!--<< Favcion >>-->
+            <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+            <!--<< Bootstrap min.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+            <!--<< All Min Css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+
+            <!--<< Animate.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+
+            <!--<< Magnific Popup.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+
+            <!--<< MeanMenu.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.css') }}">
+
+            <!--<< Swiper Bundle.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}">
+
+            <!--<< Nice Select.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+
+            <!--<< Main.css >>-->
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                            
+    </head>
+    <body>
+
+        <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="D" class="letters-loading">
+                        D   
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A   
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+                <p class="text-center">Loading...</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- GT Back To Top Start -->
+        <button id="gt-back-top" class="gt-back-to-top show">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+
+        <!-- GT MouseCursor Start -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner"></div>
+        
+     
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area  style-offcanvas-2">
+            <div class="header-offcanvas-border">
+                <div class="offcanvas__info">
+                <div class="offcanvas__close">
+                    <button>
+                    <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="social-icon d-none d-xl-block">
+                             <a href="https://flowcv.com/resume/e2rb44mbnwsl" target="_blank">
+        <i class="fa-regular fa-file" style="--vlr:7" title="Resume"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/dipak-gupta-63896a347/" target="_blank">  
+    <i class="fa-brands fa-square-linkedin" style="--vlr:8" title="LinkedIn"></i></a>
+<a href="https://github.com/DipakGupta2006" target="_blank">
+<i class="fa-brands fa-github" style="--vlr:9" title="GitHub"></i>
+</a>
+
+<a href="https://leetcode.com/u/mrUnknown01/" target="_blank">
+    <!-- <i class="fa-brands fa-leetcode" style="--vlr:9"></i> -->
+    <i class="fa-solid fa-code" style="--vlr:9" title="LeetCode"></i>
+</a>
+<!-- hackerrank -->
+<a href="https://www.hackerrank.com/profile/idipakgupta2006" target="_blank">
+    <i class="fa-solid fa-h" style="--vlr:10" title="HackerRank"></i>
+</a>
+
+<!-- mail -->
+<a href="mailto:dipakgupta2006@gmail.com" target="_blank">
+    <i class="fa-regular fa-envelope" style="--vlr:11" title="Email"></i>
+</a>
+
+                        </div>
+                        <div class="logo">
+                            <a href="{{ url_for('home') }}" class="header-logo">
+                                <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                            </a>
+                        </div>
+
+                        
+
+                        <div class="header-right pb-0 d-flex justify-content-end align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menus">
+                                        <ul>
+                                            <li class="has-dropdown active">
+                                                <a href="{{ url_for('home') }}" class="border-none">
+                                                Home
+                                                </a>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                           <div class="header-btn d-none d-xl-block">
+                                <a href="{{ url_for('contact') }}" class="theme-btn">
+                                    get in touch
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- GT Search Start -->
+        
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <!-- Hero Section Start -->
+        <section class="hero-section hero-1">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <div class="hero-content">
+                            <h1 class="wow fadeInUp" data-wow-delay=".3s">
+                                Aspiring<br> Software Engineer 
+                                <span class="sub-text">DSA Learner</span>
+                                <span class="dot-shape">
+                                    &nbsp;&nbsp;&nbsp;<img src="{{ url_for('static', filename='images/home-1/hero/dot-arrow.png') }}" class="radius-shape1 float-bob-y" alt="img">
+                                </span>
+                            </h1>                            
+
+                            <div class="counter-wrap">
+                                
+
+                                <div class="counter-item wow fadeInUp" data-wow-delay=".3s">
+                                    <h2>
+                                        <span class="gt-count">40</span> +
+                                    </h2>
+                                    <p>Certificates</p>
+                                </div>
+                                
+                                <div class="counter-item wow fadeInUp" data-wow-delay=".5s">
+                                    <h2>
+                                        <span class="gt-count">400</span> +
+                                    </h2>
+                                    <p>Leetcode Questions Solved</p>
+                                </div>
+                                <div class="counter-item wow fadeInUp" data-wow-delay=".7s">
+                                    <h2>
+                                        <span class="gt-count">7000</span> +
+                                    </h2>
+                                    <p>Lines of Code Written</p>
+                                </div>
+                            </div>
+                            <!-- watch cv -->
+                            <div class="download-cv wow fadeInUp" data-wow-delay=".9s" >
+                                <a href="#"  class="theme-btn" title="Founder of growwWell Pvt. Ltd.">
+                                    Founder of growwWell Pvt. Ltd.
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://flowcv.com/resume/e2rb44mbnwsl" target="_blank" class="theme-btn" title="View My CV">
+                                    View My CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <section class="line-section">
+            <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- About Section Start -->
+        <section class="about-section section-padding fix">
+            <div class="left-shape">
+                <img src="{{ url_for('static', filename='images/home-1/about/left-shape.png') }}" alt="img">
+            </div>
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="row g-4">
+                        
+                        <div class="col-lg-6">
+                            <div class="superhero-image">
+                                <img src="{{ url_for('static', filename='images/home-1/gaming-logo/dipak.jpeg') }}" alt="img" height="450rem" width="530rem" style="border-top-left-radius: 20%; border-bottom-left-radius: 20%;" class="wow fadeInRight" data-wow-delay=".3s">
+                                <div class="radius-shape1 float-bob-y">
+                                    <img src="{{ url_for('static', filename='images/home-1/about/radius-shape1.png') }}" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="section-title mb-0">
+                                    <h6 class="subtitle tz-sub-tilte tz-sub-anim  text-uppercase tx-subTitle"><a href="{{ url_for('about') }}">About Me</a></h6>
+
+                                    <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim" >
+                                        A Passionate Software Engineer <br> Dedicated to Building Innovative Solutions
+                                    </h2>
+                                </div>
+                                <p class="about-text wow fadeInUp" data-wow-delay=".5s">
+                                    I am an aspiring Software Engineer pursuing a B.Tech in Artificial Intelligence and Data Science with a strong academic record (CGPA: 9.42). I have a solid foundation in Java, Python, C, C++, and SQL, along with hands-on experience in full-stack development using Flask, HTML, CSS, JavaScript, and Tailwind CSS.<br>I am passionate about learning new technologies and building scalable solutions, with the goal of securing a role at a top tech company.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>  
+        
+            <div class="game-wrapper section-padding pb-0">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-xl-8">
+                            <div class="section-title">
+                                <h6 class="subtitle tz-sub-tilte tz-sub-anim  text-uppercase tx-subTitle"><a href="{{ url_for('projects') }}">My Latest Projects</a></h6>
+                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
+                                        Showcasing My Latest Projects <br> A Journey of Innovation and Creativity
+                                </h2>
+                                <p>
+                                    1. Personal Portfolio Website<br>
+                                    2. Password Manager Web Application⁠<br>
+                                    3. CleanDataX Automated Data Cleaning Web App⁠<br>
+                                    4. AI-Powered Personal Voice Assistant <br>
+                                    5. Employee Payroll Management System and Bonus Calculator
+                                </p>
+                                <span class="dot-shape">
+                                    <!-- meko is image ko project ke right side par lana hai -->
+                                    &nbsp;&nbsp;&nbsp;<img src="{{ url_for('static', filename='images/home-1/hero/dot-arrow.png') }}" class="radius-shape1 float-bob-y" alt="img" style="float: right; margin-top: -20rem; margin-right: -20rem; width: 15rem; height: 15rem; transform: rotate(90deg);  ">
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- Skills Section Start -->
+        <section class="news-section fix section-padding">
+            <div class="container">
+                <div class="section-title-area">
+                    <div class="section-title mb-0">
+                        <h6 class="subtitle tz-sub-tilte tz-sub-anim  text-uppercase tx-subTitle">My Skills</h6>
+                        <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
+                            Showcasing My Skills <br> A Journey of Innovation and Creativity
+                        </h2>
+                    </div>
+                    <!-- <a href="news.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
+                       view all blogs
+                    </a> -->
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="news-box-items">
+                            <div class="content">
+                                <h3><a href="#">Web Technologies</a></h3>
+                                <span class="gt-date">
+                                    <i class="fa-solid fa-code"></i> HTML, CSS, Tailwind CSS, JavaScript
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="news-box-items">
+                            <div class="content">
+                                <h3><a href="#">Programming Languages</a></h3>
+                                <span class="gt-date">
+                                    <i class="fa-solid fa-code"></i> Python, Java, C++, C, SQL, Dart(basic)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="news-box-items">
+                            <div class="content">
+                                <h3><a href="#">Libraries/Framewoks</a></h3>
+                                <span class="gt-date">
+                                    <i class="fa-solid fa-code"></i> Pandas, NumPy, Matplotlib, Seaborn, Flask
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="news-box-items">
+                            <div class="content">
+                                <h3><a href="#">Tools</a></h3>
+                                <span class="gt-date">
+                                    <i class="fa-solid fa-code"></i> Git, GitHub, VS Code, Google Colab
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Brand Section Start -->
+
+        <!-- Cta Section Start -->
+        <section class="cta-contact-section section-padding pb-0">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="content wow fadeInUp" data-wow-delay=".3s">
+                        <p>
+                            Ready to turn your ideas into reality? <br>
+                            Contact me today and let's discuss how I can help you achieve your goals.
+                        </p>
+                        <h3>
+                            Let's Connect and Create Something Amazing Together!
+                            <br>
+                                Whether you have a project in mind or just want to say hello,<br> I'm here to listen and collaborate.
+                        </h3>
+                    </div>
+                    
+                    <div class="contact-right wow fadeInUp" data-wow-delay=".7s">
+                        <div class="contact-info">
+                            <h3>call me</h3>
+                            <p><a href="tel:+91032145609870">+91 87792 64482</a></p>
+                        </div>
+                        <a href="{{ url_for('contact') }}" class="theme-btn">
+                          get started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div dir="rtl" class="swiper line-slider2">
+                <div class="swiper-wrapper gt-slide-transtion">
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                     <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                    <div class="swiper-slide gt-brand-slide-element">
+                        <span class="line1"></span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section fix bg-cover" style="background-image: url('{{ url_for('static', filename='images/home-1/footer-image.jpg') }}');">
+            <div class="container">
+                <div class="footer-top-wrapper">
+                    <a href="{{ url_for('home') }}" class="footer-logo">
+                        <!-- <img src="assets/img/logo/white-logo-3.svg" alt="logo-img"> -->
+                        <h2 style="color: white; font-size: 24px; font-weight: bold;">DIPAK GUPTA</h2>
+                    </a>
+                    <div class="location-info">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p>
+                            Mira Road, Thane
+                        </p>
+                    </div>
+                </div>
+            </div>            
+           
+             
+            <p class="footer-bottom-text">© 2026 <b>DIPAK GUPTA</b>. All Rights Reserved.</p>
+        </footer>
+            </div>
+        </div>
+
+        
+         
+        <!--<< All JS Plugins >>-->
+<script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+
+<!--<< Viewport Js >>-->
+<script src="{{ url_for('static', filename='js/viewport.jquery.js') }}"></script>
+
+<!--<< Bootstrap Js >>-->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+<!--<< nice-select Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+
+<!--<< Waypoints Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.waypoints.js') }}"></script>
+
+<!--<< Counterup Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+
+<!--<< Parallaxie Min Js >>-->
+<script src="{{ url_for('static', filename='js/parallaxie.js') }}"></script>
+
+<!--<< Swiper Slider Js >>-->
+<script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+
+<!--<< MeanMenu Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.meanmenu.min.js') }}"></script>
+
+<!--<< Magnific Popup Js >>-->
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+
+<!--<< Gsap Min Js >>-->
+<script src="{{ url_for('static', filename='js/gsap.min.js') }}"></script>
+
+<!--<< Gsap Scroll To Plugin Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-to-plugin.js') }}"></script>
+
+<!--<< Gsap Scroll Smoother Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-smoother.js') }}"></script>
+
+<!--<< Gsap Scroll Trigger Js >>-->
+<script src="{{ url_for('static', filename='js/gsap-scroll-trigger.js') }}"></script>
+
+<!--<< SplitText Min Js >>-->
+<script src="{{ url_for('static', filename='js/SplitText.min.js') }}"></script>
+
+<!--<< Wow Animation Js >>-->
+<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+
+<!--<< splitType Js >>-->
+<script src="{{ url_for('static', filename='js/splitType.js') }}"></script>
+
+<!--<< script-gsap Js >>-->
+<script src="{{ url_for('static', filename='js/script-gsap.js') }}"></script>
+
+<!--<< Main.js >>-->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+
+<!-- Mirrored from ex-coders.com/html/pubzi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Nov 2025 13:35:44 GMT -->
+</html>
